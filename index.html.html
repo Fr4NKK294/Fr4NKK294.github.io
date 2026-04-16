@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> UwU universal </title>
+
+
+   <style>
+        body {
+            font-family: Calibri;
+            background: lightpink;
+            text-align: center;
+        }
+
+        .caja {
+            background: hotpink;
+            padding: 20px;
+            width: 200px;
+            margin: auto;
+            border-radius: 200px;
+            color: white;
+        }
+
+        .zona {
+        	margin: 30px;
+        }
+
+        button {
+        	padding: 10px 20px;
+        	font-size: 16px;
+        	cursor: pointer;
+        }
+
+        img {
+        	padding: 10px 20px;
+        	font-size: 16px;
+        	cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HOLA YO SOY EL UwU</h1>
+
+    <div class="caja">
+        <h2> Y te presento los sonidos UwU</h2>
+    </div>
+    <p>Ahora aprieta el boton que quieras <b>UwU</b></p>
+
+    <div class="zona">
+    	<button onclick="sonar('UwU1')"> UwU1</button>
+    </div>
+    <div class="zona" style="text-align: right;">
+    	<button onclick="sonar('UwU2')"> UwU3</button>
+    </div>
+    <div class="zona" style="text-align: center;">
+    	<button onclick="sonar('UwU3')"> UwU2</button>
+    </div>
+    <div class="zona" style="text-align: left;">
+    	<button onclick="sonar('UwU4')"> UwU4</button>
+    </div>
+    <div class="zona" style="text-align: center;">
+    	<button onclick="sonar('UwU5')"> UwU5</button>
+    </div>
+
+
+    <audio id="UwU1" src="UwU.mp3"> </audio>
+    <audio id="UwU2" src="UwU2.mp3"> </audio>
+    <audio id="UwU3" src="UwU3.mp3"> </audio>
+    <audio id="UwU4" src="UwU4.mp3"> </audio>
+    <audio id="UwU5" src="UwU5.mp3"> </audio>
+
+     <script>
+        function sonar(idAudio) {
+            const audio = document.getElementById(idAudio);
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+
+
+    <img src="UwU.png">
+    
+	
+
+
+</body>
+</html>
